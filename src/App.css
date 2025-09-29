@@ -1,0 +1,60 @@
+/* Dashboard specific styles */
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Smooth animations for widget interactions */
+.widget-wrapper {
+  transition: all 0.2s ease-in-out;
+}
+
+.widget-wrapper:hover {
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-grid-item > .react-resizable-handle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .widget-header {
+    padding: 0.5rem !important;
+  }
+
+  .widget-content {
+    padding: 0.5rem !important;
+  }
+}
+
+/* Loading states */
+.widget-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Custom scrollbar for tables */
+.widget-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.widget-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.widget-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.widget-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
